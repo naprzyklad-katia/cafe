@@ -49,7 +49,7 @@ footer {
 .hero-container {
   position: absolute;
   height: 100vh;
-  max-height: 700px;
+  max-height: 400px;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -60,7 +60,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
 }
 
 .hero-content {
@@ -123,4 +123,25 @@ video {
   mix-blend-mode: screen;
   background: #fff;
   color: #000;
+}
+
+@media (max-device-width: 1024px) {
+  .hero-content__h1--effect {
+    display: flex;
+    font-size: 91px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  @media (max-device-width: 667px) {
+    .hero-content__h1--effect {
+      font-size: 80px;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      justify-content: center;
+    }
+  }
 }
